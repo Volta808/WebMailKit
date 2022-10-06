@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Volta\\Documents\\Visual Studio\\WebMailKit\\WebMailKit\\WebMailKit.csproj": {}
+    "C:\\Users\\Volta\\Documents\\GitHub\\WebMailKit\\Lab2\\Lab2\\Lab2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Volta\\Documents\\Visual Studio\\WebMailKit\\WebMailKit\\WebMailKit.csproj": {
+    "C:\\Users\\Volta\\Documents\\GitHub\\WebMailKit\\Lab2\\Lab2\\Lab2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Volta\\Documents\\Visual Studio\\WebMailKit\\WebMailKit\\WebMailKit.csproj",
-        "projectName": "WebMailKit",
-        "projectPath": "C:\\Users\\Volta\\Documents\\Visual Studio\\WebMailKit\\WebMailKit\\WebMailKit.csproj",
+        "projectUniqueName": "C:\\Users\\Volta\\Documents\\GitHub\\WebMailKit\\Lab2\\Lab2\\Lab2.csproj",
+        "projectName": "Lab2",
+        "projectPath": "C:\\Users\\Volta\\Documents\\GitHub\\WebMailKit\\Lab2\\Lab2\\Lab2.csproj",
         "packagesPath": "C:\\Users\\Volta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Volta\\Documents\\Visual Studio\\WebMailKit\\WebMailKit\\obj\\",
+        "outputPath": "C:\\Users\\Volta\\Documents\\GitHub\\WebMailKit\\Lab2\\Lab2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Volta\\AppData\\Roaming\\NuGet\\NuGet.Config",
