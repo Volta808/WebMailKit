@@ -1,0 +1,27 @@
+﻿@page
+@using Lab2.Model.Courriel
+@model Lab2.Pages.MailModel
+@{
+}
+<h1>Mail</h1>
+<form method="post">
+    <label>To</label><br />
+    <input asp-for="toMail" /><br />
+    <br />
+    <label>Subject</label><br />
+    <input asp-for="subject" /><br />
+    <br />
+    <label>Message</label><br />
+    <input asp-for="message" /><br />
+    <br /><br />
+    <input type="submit"/>
+
+</form>
+
+@if(Model.toMail != null && Model.subject!=null && Model.message != null){
+    Courriel.toMail = Model.toMail;
+    Courriel.message = Model.message;
+    Courriel.subject = Model.subject;
+    Courriel.envoyer();
+
+}

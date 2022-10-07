@@ -1,0 +1,24 @@
+﻿@page
+@using MailKit.Net.Smtp
+@using MailKit.Security
+@using Lab2.Model.Courriel
+@model Lab2.Pages.LoginModel
+@{
+    
+}
+<h1> Connexion </h1>
+<form method="post">
+    <label asp-for="email"></label><br />
+    <input type="email" asp-for="email"/><br />
+    <br />
+    <label asp-for ="password"></label><br />
+    <input asp-for="password" type="password" /><br />
+    <br /><br />
+    <input type="submit" value="Se connecter"/>
+</form>
+
+@if(Model.email!=null && Model.password!=null){
+    Courriel.password = Model.password;
+    Courriel.fromMail = Model.email;
+    Response.Redirect("Mail");
+}
