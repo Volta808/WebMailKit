@@ -1,3 +1,4 @@
+using Lab2.Model.Courriel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
@@ -14,8 +15,13 @@ namespace Lab2.Pages
         [Display(Name = "Entrez le mot de passe")]
         public string password { get; set; }
 
-        public void OnGet()
+        public void OnPost()
         {
+            if(email != null && password != null){
+                Courriel.password = password;
+                Courriel.fromMail = email;
+                Response.Redirect("Mail");
+            }
         }
     }
 }

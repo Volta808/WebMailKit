@@ -1,3 +1,4 @@
+using Lab2.Model.Courriel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -13,8 +14,16 @@ namespace Lab2.Pages
 
         [BindProperty]
         public string message { get; set; }
-        public void OnGet()
+        public void OnPost()
         {
+            if (toMail != null && subject != null && message != null)
+            {
+                Courriel.toMail = toMail;
+                Courriel.message = message;
+                Courriel.subject = subject;
+                Courriel.envoyer();
+
+            }
         }
     }
 }

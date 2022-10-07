@@ -1,5 +1,4 @@
 ﻿@page
-@using Lab2.Model.Courriel
 @model Lab2.Pages.MailModel
 @{
 }
@@ -17,11 +16,3 @@
     <input type="submit"/>
 
 </form>
-
-@if(Model.toMail != null && Model.subject!=null && Model.message != null){
-    Courriel.toMail = Model.toMail;
-    Courriel.message = Model.message;
-    Courriel.subject = Model.subject;
-    Courriel.envoyer();
-
-}

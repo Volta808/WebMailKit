@@ -16,9 +16,3 @@
     <br /><br />
     <input type="submit" value="Se connecter"/>
 </form>
-
-@if(Model.email!=null && Model.password!=null){
-    Courriel.password = Model.password;
-    Courriel.fromMail = Model.email;
-    Response.Redirect("Mail");
-}
